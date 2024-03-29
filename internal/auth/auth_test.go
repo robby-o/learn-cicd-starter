@@ -25,7 +25,7 @@ func TestGetApiKey(t *testing.T) {
 		"bad format": {
 			headers:    http.Header{"Authorization": []string{"InvalidFormat"}},
 			want:       "",
-			wantErrMsg: "malformed authorization headers",
+			wantErrMsg: "malformed authorization header",
 		},
 	}
 
